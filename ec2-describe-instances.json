@@ -1,0 +1,1418 @@
+{
+    "Reservations": [
+        {
+            "OwnerId": "730471034866", 
+            "ReservationId": "r-87d82ac4", 
+            "Groups": [
+                {
+                    "GroupName": "box_web", 
+                    "GroupId": "sg-82e2a3f5"
+                }
+            ], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": null, 
+                    "KernelId": "aki-71665e05", 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2014-09-05T05:58:29.000Z", 
+                    "ProductCodes": [], 
+                    "Tags": [
+                        {
+                            "Value": "rundeck_glass_adfs", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "InstanceId": "i-7c992f3f", 
+                    "ImageId": "ami-ee7d8899", 
+                    "PrivateDnsName": null, 
+                    "KeyName": "chef-keypair", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "box_web", 
+                            "GroupId": "sg-82e2a3f5"
+                        }
+                    ], 
+                    "ClientToken": null, 
+                    "InstanceType": "m3.large", 
+                    "NetworkInterfaces": [], 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-2b017020", 
+                                "AttachTime": "2014-07-02T13:38:33.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "RootDeviceType": "ebs", 
+                    "StateTransitionReason": "User initiated (2014-09-05 09:17:58 GMT)", 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "730471034866", 
+            "ReservationId": "r-fa88e9b9", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": null, 
+                    "RootDeviceType": "ebs", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2014-11-05T09:49:25.000Z", 
+                    "PrivateIpAddress": "172.14.2.156", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-2650b943", 
+                    "StateTransitionReason": null, 
+                    "InstanceId": "i-e2393da1", 
+                    "ImageId": "ami-896c96fe", 
+                    "PrivateDnsName": "ip-172-14-2-156.eu-west-1.compute.internal", 
+                    "KeyName": "rsd-haad", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "RSD-Int-Machine-Access", 
+                            "GroupId": "sg-8b519eee"
+                        }
+                    ], 
+                    "ClientToken": null, 
+                    "SubnetId": "subnet-c5a54bb2", 
+                    "InstanceType": "m3.medium", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-2650b943", 
+                            "Description": null, 
+                            "NetworkInterfaceId": "eni-c88cbbbf", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-14-2-156.eu-west-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.14.2.156"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-14-2-156.eu-west-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-e5c6e6a4", 
+                                "AttachTime": "2014-11-05T09:49:25.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "RSD-Int-Machine-Access", 
+                                    "GroupId": "sg-8b519eee"
+                                }
+                            ], 
+                            "SubnetId": "subnet-c5a54bb2", 
+                            "OwnerId": "730471034866", 
+                            "PrivateIpAddress": "172.14.2.156"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-3f96ae34", 
+                                "AttachTime": "2014-11-05T09:49:28.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "KernelId": "aki-52a34525", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "Tags": [
+                        {
+                            "Value": "Ysance", 
+                            "Key": "Customer"
+                        }, 
+                        {
+                            "Value": "Dev", 
+                            "Key": "Environment"
+                        }, 
+                        {
+                            "Value": "RSD-Int-Ysance", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "Testing", 
+                            "Key": "Stack"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "730471034866", 
+            "ReservationId": "r-1880b859", 
+            "Groups": [
+                {
+                    "GroupName": "Glass-access", 
+                    "GroupId": "sg-575a6720"
+                }
+            ], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": null, 
+                    "KernelId": "aki-52a34525", 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2014-06-17T09:54:41.000Z", 
+                    "ProductCodes": [], 
+                    "Tags": [
+                        {
+                            "Value": "Emark", 
+                            "Key": "Customer"
+                        }, 
+                        {
+                            "Value": "Emark-int", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "Integration", 
+                            "Key": "Stack"
+                        }
+                    ], 
+                    "InstanceId": "i-1e23fd5e", 
+                    "ImageId": "ami-896c96fe", 
+                    "PrivateDnsName": null, 
+                    "KeyName": "rsd-haad", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "Glass-access", 
+                            "GroupId": "sg-575a6720"
+                        }
+                    ], 
+                    "ClientToken": "COMsS1402998881352", 
+                    "InstanceType": "m3.medium", 
+                    "NetworkInterfaces": [], 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-608e0367", 
+                                "AttachTime": "2014-06-17T09:54:45.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "RootDeviceType": "ebs", 
+                    "StateTransitionReason": "User initiated (2014-06-20 09:32:02 GMT)", 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "730471034866", 
+            "ReservationId": "r-f5d2ebb5", 
+            "Groups": [
+                {
+                    "GroupName": "box_web", 
+                    "GroupId": "sg-82e2a3f5"
+                }
+            ], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": null, 
+                    "KernelId": "aki-71665e05", 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2014-04-23T08:22:33.000Z", 
+                    "ProductCodes": [
+                        {
+                            "ProductCodeId": "9elk1irn71a3bgt9iv3vxt1g0", 
+                            "ProductCodeType": "marketplace"
+                        }
+                    ], 
+                    "Tags": [
+                        {
+                            "Value": "rundeck_websphere_oracle", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "InstanceId": "i-a112fce2", 
+                    "ImageId": "ami-4dc4383a", 
+                    "PrivateDnsName": null, 
+                    "KeyName": "chef-keypair", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "box_web", 
+                            "GroupId": "sg-82e2a3f5"
+                        }
+                    ], 
+                    "ClientToken": null, 
+                    "InstanceType": "m1.large", 
+                    "NetworkInterfaces": [], 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": false, 
+                                "VolumeId": "vol-64df4a6f", 
+                                "AttachTime": "2014-04-23T08:22:36.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "RootDeviceType": "ebs", 
+                    "StateTransitionReason": "User initiated (2014-04-23 16:28:43 GMT)", 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "730471034866", 
+            "ReservationId": "r-ac8fb7ed", 
+            "Groups": [
+                {
+                    "GroupName": "Glass-access", 
+                    "GroupId": "sg-575a6720"
+                }
+            ], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": null, 
+                    "KernelId": "aki-52a34525", 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2014-06-17T09:52:27.000Z", 
+                    "ProductCodes": [], 
+                    "Tags": [
+                        {
+                            "Value": "Nuix-int", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "Nuix", 
+                            "Key": "Customer"
+                        }, 
+                        {
+                            "Value": "Integration", 
+                            "Key": "Stack"
+                        }
+                    ], 
+                    "InstanceId": "i-e720fea7", 
+                    "ImageId": "ami-896c96fe", 
+                    "PrivateDnsName": null, 
+                    "KeyName": "rsd-haad", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "Glass-access", 
+                            "GroupId": "sg-575a6720"
+                        }
+                    ], 
+                    "ClientToken": "rRISt1402998746951", 
+                    "InstanceType": "m3.medium", 
+                    "NetworkInterfaces": [], 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-2e8e0329", 
+                                "AttachTime": "2014-06-17T09:52:31.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "RootDeviceType": "ebs", 
+                    "StateTransitionReason": "User initiated (2014-07-04 11:55:39 GMT)", 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "730471034866", 
+            "ReservationId": "r-7ba55838", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": null, 
+                    "RootDeviceType": "ebs", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2014-07-03T14:59:44.000Z", 
+                    "PrivateIpAddress": "172.14.2.11", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-2650b943", 
+                    "StateTransitionReason": null, 
+                    "InstanceId": "i-d547f696", 
+                    "ImageId": "ami-896c96fe", 
+                    "PrivateDnsName": "ip-172-14-2-11.eu-west-1.compute.internal", 
+                    "KeyName": "rsd-haad", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "RSD-Int-Machine-Access", 
+                            "GroupId": "sg-8b519eee"
+                        }
+                    ], 
+                    "ClientToken": null, 
+                    "SubnetId": "subnet-c5a54bb2", 
+                    "InstanceType": "m3.medium", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-2650b943", 
+                            "Description": null, 
+                            "NetworkInterfaceId": "eni-ec5bd59b", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-14-2-11.eu-west-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.14.2.11"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-14-2-11.eu-west-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-f45230b5", 
+                                "AttachTime": "2014-07-03T14:59:44.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "RSD-Int-Machine-Access", 
+                                    "GroupId": "sg-8b519eee"
+                                }
+                            ], 
+                            "SubnetId": "subnet-c5a54bb2", 
+                            "OwnerId": "730471034866", 
+                            "PrivateIpAddress": "172.14.2.11"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-78ef9e73", 
+                                "AttachTime": "2014-07-03T14:59:47.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "KernelId": "aki-52a34525", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "Tags": [
+                        {
+                            "Value": "Dev", 
+                            "Key": "Environment"
+                        }, 
+                        {
+                            "Value": "RSD-Int-Emark", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "Testing", 
+                            "Key": "Stack"
+                        }, 
+                        {
+                            "Value": "Emark", 
+                            "Key": "Customer"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "730471034866", 
+            "ReservationId": "r-1c27c85f", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": "ec2-54-76-192-25.eu-west-1.compute.amazonaws.com", 
+                    "RootDeviceType": "ebs", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2014-06-20T14:58:15.000Z", 
+                    "PublicIpAddress": "54.76.192.25", 
+                    "PrivateIpAddress": "172.14.1.12", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-2650b943", 
+                    "StateTransitionReason": null, 
+                    "InstanceId": "i-71d07132", 
+                    "ImageId": "ami-896c96fe", 
+                    "PrivateDnsName": "ip-172-14-1-12.eu-west-1.compute.internal", 
+                    "KeyName": "rsd-haad", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "RSD-Int-Proxy-Access", 
+                            "GroupId": "sg-88519eed"
+                        }
+                    ], 
+                    "ClientToken": null, 
+                    "SubnetId": "subnet-c6a54bb1", 
+                    "InstanceType": "t1.micro", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "SourceDestCheck": false, 
+                            "VpcId": "vpc-2650b943", 
+                            "Description": null, 
+                            "Association": {
+                                "PublicIp": "54.76.192.25", 
+                                "PublicDnsName": "ec2-54-76-192-25.eu-west-1.compute.amazonaws.com", 
+                                "IpOwnerId": "amazon"
+                            }, 
+                            "NetworkInterfaceId": "eni-d34dc9a4", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-14-1-12.eu-west-1.compute.internal", 
+                                    "Association": {
+                                        "PublicIp": "54.76.192.25", 
+                                        "PublicDnsName": "ec2-54-76-192-25.eu-west-1.compute.amazonaws.com", 
+                                        "IpOwnerId": "amazon"
+                                    }, 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.14.1.12"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-14-1-12.eu-west-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-f61a80b7", 
+                                "AttachTime": "2014-06-20T14:58:15.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "RSD-Int-Proxy-Access", 
+                                    "GroupId": "sg-88519eed"
+                                }
+                            ], 
+                            "SubnetId": "subnet-c6a54bb1", 
+                            "OwnerId": "730471034866", 
+                            "PrivateIpAddress": "172.14.1.12"
+                        }
+                    ], 
+                    "SourceDestCheck": false, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-d2345cd9", 
+                                "AttachTime": "2014-06-20T14:58:18.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "KernelId": "aki-52a34525", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "Tags": [
+                        {
+                            "Value": "RSD-Int-GW", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "Rsd", 
+                            "Key": "Customer"
+                        }, 
+                        {
+                            "Value": "Testing", 
+                            "Key": "Stack"
+                        }, 
+                        {
+                            "Value": "Dev", 
+                            "Key": "Environment"
+                        }, 
+                        {
+                            "Value": null, 
+                            "Key": "Department"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "730471034866", 
+            "ReservationId": "r-39a49c78", 
+            "Groups": [
+                {
+                    "GroupName": "Glass-access", 
+                    "GroupId": "sg-575a6720"
+                }
+            ], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": null, 
+                    "KernelId": "aki-52a34525", 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2014-06-17T07:12:26.000Z", 
+                    "ProductCodes": [], 
+                    "Tags": [
+                        {
+                            "Value": "Integration", 
+                            "Key": "Stack"
+                        }, 
+                        {
+                            "Value": "Filenshare-int-old", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "Filenshare", 
+                            "Key": "Customer"
+                        }
+                    ], 
+                    "InstanceId": "i-f004dab0", 
+                    "ImageId": "ami-896c96fe", 
+                    "PrivateDnsName": null, 
+                    "KeyName": "rsd-haad", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "Glass-access", 
+                            "GroupId": "sg-575a6720"
+                        }
+                    ], 
+                    "ClientToken": "IUcRK1402989145552", 
+                    "InstanceType": "m3.medium", 
+                    "NetworkInterfaces": [], 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-e4e76ae3", 
+                                "AttachTime": "2014-06-17T07:12:29.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "RootDeviceType": "ebs", 
+                    "StateTransitionReason": "User initiated (2014-06-18 09:18:56 GMT)", 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "730471034866", 
+            "ReservationId": "r-2699a267", 
+            "Groups": [
+                {
+                    "GroupName": "Glass-access", 
+                    "GroupId": "sg-575a6720"
+                }
+            ], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": null, 
+                    "KernelId": "aki-52a34525", 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2014-06-18T07:59:39.000Z", 
+                    "ProductCodes": [], 
+                    "Tags": [
+                        {
+                            "Value": "Filenshare", 
+                            "Key": "Customer"
+                        }, 
+                        {
+                            "Value": "Filenshare-int", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "Integration", 
+                            "Key": "Stack"
+                        }
+                    ], 
+                    "InstanceId": "i-f66eb7b6", 
+                    "ImageId": "ami-896c96fe", 
+                    "PrivateDnsName": null, 
+                    "KeyName": "rsd-haad", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "Glass-access", 
+                            "GroupId": "sg-575a6720"
+                        }
+                    ], 
+                    "ClientToken": "ENUEd1403078379141", 
+                    "InstanceType": "m3.medium", 
+                    "NetworkInterfaces": [], 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1a"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-dd31bcda", 
+                                "AttachTime": "2014-06-18T07:59:43.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "RootDeviceType": "ebs", 
+                    "StateTransitionReason": "User initiated (2014-08-05 08:26:14 GMT)", 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "730471034866", 
+            "ReservationId": "r-016fee43", 
+            "Groups": [
+                {
+                    "GroupName": "launch-wizard-10", 
+                    "GroupId": "sg-92c6cfe5"
+                }
+            ], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": null, 
+                    "KernelId": "aki-52a34525", 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2014-08-28T08:32:31.000Z", 
+                    "ProductCodes": [], 
+                    "Tags": [
+                        {
+                            "Value": "smartshift-test-server", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "InstanceId": "i-acfab7ee", 
+                    "ImageId": "ami-8ff23cf8", 
+                    "PrivateDnsName": null, 
+                    "KeyName": "rsd-haad", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "launch-wizard-10", 
+                            "GroupId": "sg-92c6cfe5"
+                        }
+                    ], 
+                    "ClientToken": "mxmCQ1409214751173", 
+                    "InstanceType": "t1.micro", 
+                    "NetworkInterfaces": [], 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1c"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-686a246a", 
+                                "AttachTime": "2014-08-28T08:32:35.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "RootDeviceType": "ebs", 
+                    "StateTransitionReason": "User initiated (2014-08-28 11:12:29 GMT)", 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "730471034866", 
+            "ReservationId": "r-27dc2164", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": null, 
+                    "RootDeviceType": "ebs", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2014-07-03T14:08:36.000Z", 
+                    "PrivateIpAddress": "172.14.2.103", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-2650b943", 
+                    "StateTransitionReason": null, 
+                    "InstanceId": "i-ff5beabc", 
+                    "ImageId": "ami-896c96fe", 
+                    "PrivateDnsName": "ip-172-14-2-103.eu-west-1.compute.internal", 
+                    "KeyName": "rsd-haad", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "RSD-Int-Machine-Access", 
+                            "GroupId": "sg-8b519eee"
+                        }
+                    ], 
+                    "ClientToken": null, 
+                    "SubnetId": "subnet-c5a54bb2", 
+                    "InstanceType": "m3.medium", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-2650b943", 
+                            "Description": null, 
+                            "NetworkInterfaceId": "eni-ee45cb99", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-14-2-103.eu-west-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.14.2.103"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-14-2-103.eu-west-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-83482ac2", 
+                                "AttachTime": "2014-07-03T14:08:36.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "RSD-Int-Machine-Access", 
+                                    "GroupId": "sg-8b519eee"
+                                }
+                            ], 
+                            "SubnetId": "subnet-c5a54bb2", 
+                            "OwnerId": "730471034866", 
+                            "PrivateIpAddress": "172.14.2.103"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-6be99860", 
+                                "AttachTime": "2014-07-03T14:08:40.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "KernelId": "aki-52a34525", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "Tags": [
+                        {
+                            "Value": "Nuix", 
+                            "Key": "Customer"
+                        }, 
+                        {
+                            "Value": "Testing", 
+                            "Key": "Stack"
+                        }, 
+                        {
+                            "Value": "RSD-Int-Nuix", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "Dev", 
+                            "Key": "Environment"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "730471034866", 
+            "ReservationId": "r-4c24f90f", 
+            "Groups": [
+                {
+                    "GroupName": "box_web", 
+                    "GroupId": "sg-82e2a3f5"
+                }
+            ], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": "ec2-54-220-164-236.eu-west-1.compute.amazonaws.com", 
+                    "RootDeviceType": "ebs", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2014-08-13T14:15:36.000Z", 
+                    "PublicIpAddress": "54.220.164.236", 
+                    "PrivateIpAddress": "10.83.0.147", 
+                    "ProductCodes": [], 
+                    "StateTransitionReason": null, 
+                    "InstanceId": "i-102db553", 
+                    "ImageId": "ami-ee7d8899", 
+                    "PrivateDnsName": "ip-10-83-0-147.eu-west-1.compute.internal", 
+                    "KeyName": "chef-keypair", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "box_web", 
+                            "GroupId": "sg-82e2a3f5"
+                        }
+                    ], 
+                    "ClientToken": null, 
+                    "InstanceType": "m3.large", 
+                    "NetworkInterfaces": [], 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-ffa0eff4", 
+                                "AttachTime": "2014-08-13T14:15:40.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "KernelId": "aki-71665e05", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "Tags": [
+                        {
+                            "Value": "Testing", 
+                            "Key": "Stack"
+                        }, 
+                        {
+                            "Value": "rundeck_jboss_glass_adfs", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "Rsd", 
+                            "Key": "Customer"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "730471034866", 
+            "ReservationId": "r-7f634e3f", 
+            "Groups": [
+                {
+                    "GroupName": "box_web", 
+                    "GroupId": "sg-82e2a3f5"
+                }
+            ], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": null, 
+                    "KernelId": "aki-71665e05", 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2014-04-02T07:24:32.000Z", 
+                    "ProductCodes": [], 
+                    "Tags": [
+                        {
+                            "Value": "rundeck_ubuntu_tomcat_mysql_lucidworks", 
+                            "Key": "Name"
+                        }
+                    ], 
+                    "InstanceId": "i-a45245e4", 
+                    "ImageId": "ami-ee7d8899", 
+                    "PrivateDnsName": null, 
+                    "KeyName": "chef-keypair", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "box_web", 
+                            "GroupId": "sg-82e2a3f5"
+                        }
+                    ], 
+                    "ClientToken": null, 
+                    "InstanceType": "m1.large", 
+                    "NetworkInterfaces": [], 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-60cc4a6b", 
+                                "AttachTime": "2014-03-31T15:37:53.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "RootDeviceType": "ebs", 
+                    "StateTransitionReason": "User initiated (2014-04-02 16:41:33 GMT)", 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "730471034866", 
+            "ReservationId": "r-eafb06a9", 
+            "Groups": [], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": null, 
+                    "RootDeviceType": "ebs", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2014-07-03T14:09:00.000Z", 
+                    "PrivateIpAddress": "172.14.2.48", 
+                    "ProductCodes": [], 
+                    "VpcId": "vpc-2650b943", 
+                    "StateTransitionReason": null, 
+                    "InstanceId": "i-d85bea9b", 
+                    "ImageId": "ami-896c96fe", 
+                    "PrivateDnsName": "ip-172-14-2-48.eu-west-1.compute.internal", 
+                    "KeyName": "rsd-haad", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "RSD-Int-Machine-Access", 
+                            "GroupId": "sg-8b519eee"
+                        }
+                    ], 
+                    "ClientToken": null, 
+                    "SubnetId": "subnet-c5a54bb2", 
+                    "InstanceType": "m3.medium", 
+                    "NetworkInterfaces": [
+                        {
+                            "Status": "in-use", 
+                            "SourceDestCheck": true, 
+                            "VpcId": "vpc-2650b943", 
+                            "Description": null, 
+                            "NetworkInterfaceId": "eni-b245cbc5", 
+                            "PrivateIpAddresses": [
+                                {
+                                    "PrivateDnsName": "ip-172-14-2-48.eu-west-1.compute.internal", 
+                                    "Primary": true, 
+                                    "PrivateIpAddress": "172.14.2.48"
+                                }
+                            ], 
+                            "PrivateDnsName": "ip-172-14-2-48.eu-west-1.compute.internal", 
+                            "Attachment": {
+                                "Status": "attached", 
+                                "DeviceIndex": 0, 
+                                "DeleteOnTermination": true, 
+                                "AttachmentId": "eni-attach-4c4e2c0d", 
+                                "AttachTime": "2014-07-03T14:09:00.000Z"
+                            }, 
+                            "Groups": [
+                                {
+                                    "GroupName": "RSD-Int-Machine-Access", 
+                                    "GroupId": "sg-8b519eee"
+                                }
+                            ], 
+                            "SubnetId": "subnet-c5a54bb2", 
+                            "OwnerId": "730471034866", 
+                            "PrivateIpAddress": "172.14.2.48"
+                        }
+                    ], 
+                    "SourceDestCheck": true, 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1b"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-35e9983e", 
+                                "AttachTime": "2014-07-03T14:09:03.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "KernelId": "aki-52a34525", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "Tags": [
+                        {
+                            "Value": "RSD-Int-RedFabriq", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "Testing", 
+                            "Key": "Stack"
+                        }, 
+                        {
+                            "Value": "Redfabriq", 
+                            "Key": "Customer"
+                        }, 
+                        {
+                            "Value": "Dev", 
+                            "Key": "Environment"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "730471034866", 
+            "ReservationId": "r-463af204", 
+            "Groups": [
+                {
+                    "GroupName": "launch-wizard-2", 
+                    "GroupId": "sg-45526c32"
+                }
+            ], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "disabled"
+                    }, 
+                    "PublicDnsName": null, 
+                    "KernelId": "aki-52a34525", 
+                    "State": {
+                        "Code": 80, 
+                        "Name": "stopped"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2014-06-26T13:13:53.000Z", 
+                    "ProductCodes": [], 
+                    "Tags": [
+                        {
+                            "Value": "Glass-AMI-instance", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "Integration", 
+                            "Key": "Stack"
+                        }
+                    ], 
+                    "InstanceId": "i-0ca2214e", 
+                    "ImageId": "ami-896c96fe", 
+                    "PrivateDnsName": null, 
+                    "KeyName": "rsd-haad", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "launch-wizard-2", 
+                            "GroupId": "sg-45526c32"
+                        }
+                    ], 
+                    "ClientToken": "JdEUp1403788433302", 
+                    "InstanceType": "m3.medium", 
+                    "NetworkInterfaces": [], 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1c"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-37b12535", 
+                                "AttachTime": "2014-06-26T13:13:56.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "StateReason": {
+                        "Message": "Client.UserInitiatedShutdown: User initiated shutdown", 
+                        "Code": "Client.UserInitiatedShutdown"
+                    }, 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "paravirtual", 
+                    "RootDeviceType": "ebs", 
+                    "StateTransitionReason": "User initiated (2014-07-04 11:56:00 GMT)", 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }, 
+        {
+            "OwnerId": "730471034866", 
+            "ReservationId": "r-cc78e18e", 
+            "Groups": [
+                {
+                    "GroupName": "launch-wizard-6", 
+                    "GroupId": "sg-76797401"
+                }
+            ], 
+            "Instances": [
+                {
+                    "Monitoring": {
+                        "State": "enabled"
+                    }, 
+                    "PublicDnsName": "ec2-54-195-57-131.eu-west-1.compute.amazonaws.com", 
+                    "State": {
+                        "Code": 16, 
+                        "Name": "running"
+                    }, 
+                    "EbsOptimized": false, 
+                    "LaunchTime": "2014-09-24T14:00:01.000Z", 
+                    "PublicIpAddress": "54.195.57.131", 
+                    "PrivateIpAddress": "10.91.168.168", 
+                    "ProductCodes": [], 
+                    "StateTransitionReason": null, 
+                    "InstanceId": "i-d7fcdf95", 
+                    "ImageId": "ami-0307d674", 
+                    "PrivateDnsName": "ip-10-91-168-168.eu-west-1.compute.internal", 
+                    "KeyName": "rsd-haad", 
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "launch-wizard-6", 
+                            "GroupId": "sg-76797401"
+                        }
+                    ], 
+                    "ClientToken": "ZyLYM1411567201225", 
+                    "InstanceType": "m3.medium", 
+                    "NetworkInterfaces": [], 
+                    "Placement": {
+                        "Tenancy": "default", 
+                        "GroupName": null, 
+                        "AvailabilityZone": "eu-west-1c"
+                    }, 
+                    "Hypervisor": "xen", 
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1", 
+                            "Ebs": {
+                                "Status": "attached", 
+                                "DeleteOnTermination": true, 
+                                "VolumeId": "vol-84f0d686", 
+                                "AttachTime": "2014-09-24T14:00:04.000Z"
+                            }
+                        }
+                    ], 
+                    "Architecture": "x86_64", 
+                    "RootDeviceType": "ebs", 
+                    "RootDeviceName": "/dev/sda1", 
+                    "VirtualizationType": "hvm", 
+                    "Tags": [
+                        {
+                            "Value": "Testing", 
+                            "Key": "Stack"
+                        }, 
+                        {
+                            "Value": "SIG-jboss-adfs-int3", 
+                            "Key": "Name"
+                        }, 
+                        {
+                            "Value": "SIG", 
+                            "Key": "Customer"
+                        }
+                    ], 
+                    "AmiLaunchIndex": 0
+                }
+            ]
+        }
+    ]
+}
